@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="aiv" destination="tYz-uv-P71" id="vDe-lz-jvd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYc-d3-ll4">
+                    <rect key="frame" x="246" y="285" width="108" height="30"/>
+                    <state key="normal" title="Connect Twitter"/>
+                    <connections>
+                        <action selector="connectTwitter:" destination="-1" eventType="touchUpInside" id="KAN-vJ-9DB"/>
+                    </connections>
+                </button>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="tYz-uv-P71">
+                    <rect key="frame" x="290" y="323" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="lYc-d3-ll4" secondAttribute="centerX" id="B84-oU-KfW"/>
+                <constraint firstItem="tYz-uv-P71" firstAttribute="top" secondItem="lYc-d3-ll4" secondAttribute="bottom" constant="8" id="Eps-GL-GeH"/>
+                <constraint firstAttribute="centerX" secondItem="tYz-uv-P71" secondAttribute="centerX" id="ZHj-TB-tjb"/>
+                <constraint firstAttribute="centerY" secondItem="lYc-d3-ll4" secondAttribute="centerY" id="xlD-Lm-ek0"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
